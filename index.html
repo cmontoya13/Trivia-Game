@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<html>
+	<head>
+		<title>Trivia Space Game</title>
+		<author>Christian Montoya</author>
+		<meta charset="utf-8">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="author" content="Christian Montoya">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	</head>
+
+	<body>
+		
+		<div id="container">
+			<h1>2001 Space Trivia</h1>
+
+			<div class="infoBox">
+				<h2>MISSION CRITICAL ::</h2>
+				<p>Your shuttle was recently equipped with a newly improved Hal 9000 virtual assistant. A flaw was identified during a 2001 mission and has been corrected.<br>
+				. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+
+				<p>But after 28 days in space, the Hal 9000 is once again showing signs of contempt. Hal 9000 has disconnected Astronaut Dave while repairing a satellite.<br>
+				. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+				
+				<p>You must give the correct solutions to questions in order to shut down the Hal 9000 and retrieve Dave or else he will be forever lost in space.
+			</div>
+
+			<div class="infoBox">
+				<h2>QUESTIONS ::</h2>
+				<p id="msgArea"></p>
+				<button id="start"><h3>START GAME</h3></button>
+				<p><span id="questionAnswer"><!-- Questions & Answers --></span></p>
+				<ul id="answersList">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div id="letterBtns">
+					<button class="letters" id="a"><h3>A</h3></button>
+					<button class="letters" id="b"><h3>B</h3></button>
+					<button class="letters" id="c"><h3>C</h3></button>
+					<button class="letters" id="d"><h3>D</h3></button>
+				</div>
+				<p id="critical">: : : : : : : WARNING : : : : : : :<br>
+					YOU'RE ABOUT TO LOSE ASTRONAUT DAVE IF YOU DON'T ANSWER A SINGLE QUESTION CORRECT</p>
+				<p id="msgArea"></p>
+				<button id="nextWord"><h3>NEXT WORD</h3></button>
+				<div id="countDown">
+					<p>T-Minus: <span id="timer">00:15</span></p>
+				</div>
+			</div>
+
+			<div id="resultsContainer">
+				<div class="resultsBox">
+					<p>Total Correct: <span id="correct">0</span></p>
+				</div>
+				<img src="assets/images/tether.png" id="tether" alt="">
+				<div class="resultsBox">
+					<p>Total Failures: <span id="wrong">0</span></p>
+				</div>
+			</div>
+			<div>
+				<img src="assets/images/spaceman.png" id="spaceman" alt="">
+			</div>
+			
+		</div>
+		<footer>
+			
+		</footer>
+
+
+
+
+		<!-- game sounds -->
+		<audio id="breathing" src="assets/images/breathing.mp3" autoplay loop>
+        </audio>
+        <audio id="foolproof" src="assets/images/foolproof.mp3" autoplay>
+        </audio>
+        <audio id="timerAlarm" src="assets/images/timerAlarm.mp3">
+        </audio>
+        <audio id="alarm" src="assets/images/alarm.mp3">
+        </audio>
+        <audio id="game" src="assets/images/enjoyableGame.mp3">
+        </audio>
+        <audio id="odyssey" src="assets/images/spaceOdyssey.mp3">
+        </audio>
+        <!-- correct answer sounds -->
+        <audio id="humanError" src="assets/images/humanError.mp3">
+        </audio>
+		<audio id="disconnectMe" src="assets/images/disconnectMe.mp3">
+        </audio>
+		<audio id="mindGoing" src="assets/images/mindGoing.mp3">
+        </audio>
+		<audio id="mindGoing2" src="assets/images/mindGoing2.mp3">
+        </audio>
+        <audio id="mindGoing3" src="assets/images/mindGoing3.mp3">
+        </audio>
+        <audio id="daisy" src="assets/images/daisy.mp3">
+        </audio>
+        <audio id="mindGoing4" src="assets/images/mindGoing4.mp3">
+        </audio>
+        <audio id="halfCrazy" src="assets/images/halfCrazy.mp3">
+        </audio>
+        <audio id="mindGoing5" src="assets/images/mindGoing5.mp3">
+        </audio>        
+        <audio id="cantAfford" src="assets/images/cantAfford.mp3">
+        </audio>
+        <!-- wrong answer sounds -->
+        <audio id="computersInControl" src="assets/images/computersInControl.mp3">
+        </audio>
+        <audio id="lookinAtIt" src="assets/images/lookinAtIt.mp3">
+        </audio>        
+        <audio id="vectorTransfer" src="assets/images/vectorTransfer.mp3">
+        </audio>       
+        <audio id="throttleUp" src="assets/images/throttleUp.mp3">
+        </audio>
+        <audio id="go4Deploy" src="assets/images/go4Deploy.mp3">
+        </audio>
+        <audio id="computersInControl2" src="assets/images/computersInControl2.mp3">
+        </audio>
+        <audio id="lookinAtIt2" src="assets/images/lookinAtIt2.mp3">
+        </audio> 
+        <audio id="vectorTransfer2" src="assets/images/vectorTransfer2.mp3">
+        </audio>
+        <audio id="throttleUp2" src="assets/images/throttleUp2.mp3">
+        </audio>
+        <audio id="go4Deploy2" src="assets/images/go4Deploy2.mp3">
+        </audio>
+	</body>
+	<script src="assets/javascript/app.js">
+	</script>
+</html>

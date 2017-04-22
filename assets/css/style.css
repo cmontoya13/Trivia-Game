@@ -1,0 +1,162 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	color: #000;
+}
+html, body {
+	height: 100%; /*sticky footer*/
+}
+body {
+	background-image: url("../images/space.jpg");
+	background-repeat: no-repeat;
+	font-family: 'Orbitron', sans-serif;
+	background-color: #00011a;
+	background-position: center top;
+	text-align: center;
+}
+#container {
+	min-height: 100%; /*sticky footer*/
+	width: 720px;
+	margin: 0 auto -450px; /*sticky footer bottom margin to counter footer height*/
+	text-align: center;
+}
+h1 {
+	width: 100%;
+	line-height: 3em;
+	text-shadow: 0 0 7px #fff;
+}
+.infoBox {
+	position: relative;
+	display: inline-block;
+	background-color: rgba(255,255,255,0.7);
+	border: solid 3px #60b2ec;
+	border-radius: 10px;
+	width: 300px;
+	height: 400px;
+	margin: 0 20px 50px;
+	overflow: auto;
+}
+h2 {
+	width: 100%;
+	background-color: #000;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: #60b2ec;
+}
+p {
+	text-align: left;
+	margin: 5px;
+	color: black;
+}
+li {
+	text-align: left;
+	margin: 0 5px;
+	list-style-type: none;
+	text-indent: -30px;
+	margin-left: 35px
+}
+#critical {
+	display: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: red;
+}
+#start {
+	height: 50px;
+	width: 175px;
+	margin-top: 100px;
+	cursor: pointer;
+	border: solid 2px #60b2ec;
+	background-color: #000;
+	border-radius: 10px;
+	outline: none;
+}
+h3 {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 1.2em;
+	color: #60b2ec;
+}
+h3:hover {
+	color: #fff;
+}
+.letters {
+	display: none;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border: solid 2px #60b2ec;
+	background-color: #000;
+	border-radius: 10px;
+	margin: 5px;
+	outline: none;
+}
+#nextWord {
+	display: none;
+	height: 50px;
+	width: 175px;
+	cursor: pointer;
+	border: solid 2px #60b2ec;
+	background-color: #000;
+	border-radius: 10px;
+	outline: none;
+}
+#countDown {
+	display: none;
+	position: absolute;
+	bottom: 20px;
+	left: 23px;
+	background-color: #000;
+	border: solid 3px #60b2ec;
+	border-radius: 5px;
+	width: 250px;
+}
+#timer {
+	color: #fff;
+}
+#resultsContainer {
+	position: fixed;
+	bottom: 0;
+	padding: 0 13px;
+}
+.resultsBox {
+	display: inline-block;
+	background-color: #000;
+	border: solid 3px #60b2ec;
+	border-radius: 5px;
+	width: 300px;
+	margin: 0 20px;
+	overflow: auto;
+}
+.resultsBox p, #countDown p {
+	color: #60b2ec;
+}
+#correct {
+	color: green;
+}
+#wrong {
+	color: red;
+}
+#tether {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	width: 50px;	
+}
+#spaceman {
+	position: absolute;
+	right: 100px;
+	top: 50%;	
+}
+footer {
+	position: relative;
+	z-index:-2;
+	background-image: url("../images/shuttleBay.png");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	height: 450px;
+	background-size: 100%;
+    width: 100%;
+    max-width: 946px;
+	text-align: center;
+}
